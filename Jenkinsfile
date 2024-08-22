@@ -8,18 +8,18 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                // Clean workspace before cloning (optional)
-                deleteDir()
+        // stage('Clone Repository') {
+        //     steps {
+        //         // Clean workspace before cloning (optional)
+        //         deleteDir()
 
-                // Clone the Git repository
-                git branch: 'main',
-                    url: 'https://github.com/DasoTD/cloudJen.git'
+        //         // Clone the Git repository
+        //         git branch: 'main',
+        //             url: 'https://github.com/DasoTD/cloudJen.git'
 
-                sh "ls -lart"
-            }
-        }
+        //         sh "ls -lart"
+        //     }
+        // }
 
         stage('Terraform Init') {
                     steps {
