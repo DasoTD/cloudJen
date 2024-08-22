@@ -1,4 +1,4 @@
-bucket_name = "dev-projtt2"
+bucket_name = "dev-projtt21"
 name        = "environment"
 environment = "dev-1"
 
