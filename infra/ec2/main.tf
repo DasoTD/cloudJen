@@ -29,6 +29,7 @@ resource "aws_instance" "dev_proj_1_ec2" {
 
   user_data = var.user_data_install_apache
 
+
   metadata_options {
     http_endpoint = "enabled"  # Enable the IMDSv2 endpoint
     http_tokens   = "required" # Require the use of IMDSv2 tokens
